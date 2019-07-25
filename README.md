@@ -10,7 +10,7 @@ This challenge focuses on classes in JavaScript using the new `class` keyword.
 * [X] Add your project manager as collaborator on Github.
 * [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
 * [X] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 * [ ] Push commits: git push origin `<firstName-lastName>`.
 
 **Follow these steps for completing your project.**
@@ -45,7 +45,7 @@ const fred = new Person({
 ## `prototype-refactor` - Take existing code and make it modern.
 
 * You're going to work with your prototypes assignment you built out yesterday.
-* `Challenge:` **Convert** all of your constructors into ES6 Classes using the `class` and `extends` keywords. You should be able to run your same logs and they should build out the proper expected behaviors.
+[X] * `Challenge:` **Convert** all of your constructors into ES6 Classes using the `class` and `extends` keywords. You should be able to run your same logs and they should build out the proper expected behaviors.
 
 ## `lambda-classes` - We need a roster of Lambda School personnel. Build it!
 
