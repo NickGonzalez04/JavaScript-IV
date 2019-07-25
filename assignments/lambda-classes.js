@@ -26,7 +26,7 @@ this.newCatchphrase = instruAttrs.catchPhrase;
         console.log(`Today we are learning ${subject}`);
     }
     grade(student, subject){
-        return `${student.name} receives a perfect score on ${subject}`;
+        console.log (`${student.newName} receives a perfect score on ${subject}`);
     }
 }// Instructor 
 
@@ -143,6 +143,7 @@ console.log(Bam.speak());
 
 //Instructor Methods
 console.log(MrFrank.demo('Intro-Javascript'));
+console.log(MrFrank.grade(Nick,'Intro-Javascript'));
 
 //Student 
 console.log(Nick.listsSubjects());
