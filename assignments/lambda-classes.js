@@ -39,13 +39,13 @@ class Students extends Person{
 
     }
     listsSubjects(){
-        console.log(`${this.newName} favorite subjects are: ${this.newFavsubjects}`)
+        console.log(`${this.newName} favorite subjects are: ${this.newFavsubjects}`);
     }
     PRAssignment(subject){
         console.log(`${this.newName} has submitted a PR for ${subject}`);
     }
     sprintChallenge(subject){
-        console.log(`${this.newName} has begun sprint challenge on ${subject}`)
+        console.log(`${this.newName} has begun sprint challenge on ${subject}`);
     }
 }//Student 
 
@@ -54,21 +54,20 @@ class Projectmanagers extends Instructor{
     constructor(pmAttrs){
         super(pmAttrs);
         this.newGradclassname = pmAttrs.gradClassName,
-        this.Favinstructor = pmAttrs.favInstructor;
+        this.Favinstructor = pmAttrs.favInstructor,
+        this.newChannel = pmAttrs.channel;
     }
-standup(slack){
-    console.log(`${name} announces ${channel}, @channel standy times!`);
+    standUp(slack){
+        console.log(`${this.newName} announces to ${slack}, @channel standy times!`);
 
-}
-debugsCode(student, subject){
-    console.log(`${name} debugs ${student.name}'s code on ${subject}.`);
-}
+    }
+    debugsCode(student, subject){
+        console.log(`${name} debugs ${student.name}'s code on ${subject}.`);
+    }
 }// ProjectManagers
 
 
 // Person, Instructor, ProjectManagers, 
-
-
 const fred = new Person({
  
     name: 'Fred',
@@ -117,6 +116,26 @@ const fred = new Person({
     catchPhrase: `Don't forget the homies`
   });
 
+  const Jared = new Projectmanagers({
+    name: 'Jared',
+    location: 'Bedrock',
+    age: 37,
+    favLanguage: 'JavaScript',
+    specialty: 'Front-end',
+    catchPhrase: `Don't forget the homies`
+  });
+
+  const Heath = new Projectmanagers({
+    name: 'Heath',
+    location: 'Bedrock',
+    age: 37,
+    channel: 'Web04',
+    gradClassName: 'CS4',
+    favInstructor: 'Sean',
+    favLanguage: 'JavaScript',
+    specialty: 'Full-Stack',
+    catchPhrase: `FullSnack`
+  });
 
 //Person 
 console.log(fred.speak());
@@ -134,4 +153,4 @@ console.log(Will.PRAssignment('Adv-Javascript'));
 console.log(Will.sprintChallenge('Adv-Javascript'));
 
 //ProjectManager
-
+console.log(Jared.standUp('Web4Jared'));
