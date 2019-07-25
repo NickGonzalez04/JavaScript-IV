@@ -116,6 +116,15 @@ const fred = new Person({
     catchPhrase: `Don't forget the homies`
   });
 
+  const MrEd= new Instructor({
+    name: 'Mr.Ed',
+    location: 'Bedrock',
+    age: 37,
+    favLanguage: 'Python',
+    specialty: 'FullStack',
+    catchPhrase: `i am the homie`
+  });
+
   const Jared = new Projectmanagers({
     name: 'Jared',
     location: 'Bedrock',
@@ -144,6 +153,8 @@ console.log(Bam.speak());
 //Instructor Methods
 console.log(MrFrank.demo('Intro-Javascript'));
 console.log(MrFrank.grade(Nick,'Intro-Javascript'));
+console.log(MrEd.demo('Adv-Javascript'));
+console.log(MrEd.grade(Will,'Adv-Javascript'));
 
 //Student 
 console.log(Nick.listsSubjects());
